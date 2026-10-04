@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eli e Nil Salgados | Paim</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Nunito:wght@400;700;800&display=swap">
+<style>
+:root{--red:#c4181a;--yellow:#ffc21a;--ink:#2a1208;--bg:#fff4d6;--card:#ffffff;--text:#2a1208;--muted:#6b4a35;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d0d06;--card:#2d1810;--text:#fff1d0;--muted:#d9b58f}}
+:root[data-theme="dark"]{--bg:#1d0d06;--card:#2d1810;--text:#fff1d0;--muted:#d9b58f}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Nunito,system-ui,sans-serif;line-height:1.55}
+h1,h2{font-family:Anton,Impact,sans-serif;font-weight:400;line-height:1;margin:0;letter-spacing:.01em}
+.script{font-family:"Caveat Brush","Brush Script MT",cursive}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{background:var(--red);color:#fff;padding:44px 0 56px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:22px;background:var(--bg);clip-path:polygon(0 100%,2.5% 0,5% 100%,7.5% 0,10% 100%,12.5% 0,15% 100%,17.5% 0,20% 100%,22.5% 0,25% 100%,27.5% 0,30% 100%,32.5% 0,35% 100%,37.5% 0,40% 100%,42.5% 0,45% 100%,47.5% 0,50% 100%,52.5% 0,55% 100%,57.5% 0,60% 100%,62.5% 0,65% 100%,67.5% 0,70% 100%,72.5% 0,75% 100%,77.5% 0,80% 100%,82.5% 0,85% 100%,87.5% 0,90% 100%,92.5% 0,95% 100%,97.5% 0,100% 100%)}
+.hero .script{font-size:clamp(34px,8vw,56px);color:var(--yellow);margin:0 0 4px;transform:rotate(-3deg);display:inline-block}
+.hero h1{font-size:clamp(64px,19vw,150px);color:#fff;text-shadow:4px 4px 0 var(--ink)}
+.hero p.lead{font-size:clamp(18px,3.4vw,22px);max-width:30em;margin:18px 0 26px;font-weight:700}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:800;font-size:17px;text-decoration:none;border:3px solid var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btn.y{background:var(--yellow);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn.o{background:transparent;color:#fff;border-color:#fff}
+section{padding:48px 0}
+h2{font-size:clamp(36px,8vw,56px);color:var(--red);margin-bottom:8px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--yellow)}}
+:root[data-theme="dark"] h2{color:var(--yellow)}
+.sub{color:var(--muted);margin:0 0 26px;max-width:36em}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.item{background:var(--card);border-radius:20px 20px 20px 4px;padding:20px 22px;border-left:8px solid var(--yellow)}
+.item:nth-child(3n+1){border-left-color:var(--red)}
+.item h3{margin:0 0 4px;font-size:21px;font-weight:800}
+.item p{margin:0;color:var(--muted);font-size:16px}
+.tag{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:800;font-size:14px;padding:2px 10px;border-radius:999px;margin-top:10px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.how div{background:var(--card);border-radius:16px;padding:18px 20px}
+.how b{display:block;font-size:19px;margin-bottom:2px}
+.about{background:var(--yellow);color:var(--ink)}
+.about h2{color:var(--red)}
+.about p{max-width:36em;font-size:18px;margin:0 0 14px}
+.about .script{font-size:30px;color:var(--red)}
+.cta{text-align:center}
+.cta .btn.y{font-size:20px}
+footer{padding:26px 0 40px;text-align:center;color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="script">Feitos com carinho para você!</p>
+    <h1>ELI E NIL<br>SALGADOS</h1>
+    <p class="lead">Salgados fresquinhos, saborosos e feitos na hora, aqui em Paim. Para o lanche, a festa ou a encomenda do dia.</p>
+    <div class="btns">
+      <a class="btn y" id="wa" href="https://instagram.com/elinilsalgados_" target="_blank" rel="noopener">Fazer encomenda</a>
+      <a class="btn o" href="#cardapio">Ver o cardápio</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="cardapio">
+  <div class="wrap">
+    <h2>Nosso cardápio</h2>
+    <p class="sub">Tudo preparado com carinho e entregue crocante, assado ou frito, do jeito que você pedir.</p>
+    <div class="menu">
+      <div class="item"><h3>Salgados variados</h3><p>Coxinhas, enroladinhos e pastéis de vários sabores, fresquinhos.</p></div>
+      <div class="item"><h3>Salgados assados</h3><p>Folhados e enroladinhos dourados, direto do forno.</p></div>
+      <div class="item"><h3>Pastéis fritos</h3><p>Massa crocante e recheio generoso, fritos na hora.</p></div>
+      <div class="item"><h3>Lindinhos</h3><p>Salgadinhos de festa, perfeitos para dividir.</p></div>
+      <div class="item"><h3>Beijinhos</h3><p>Docinhos macios para fechar o lanche com doçura.</p></div>
+      <div class="item"><h3>Pizzas</h3><p>Pizzas fatiadas e inteiras, com cobertura caprichada.</p></div>
+      <div class="item"><h3>Kit festa</h3><p>Kit com 10 unidades em 4 sabores. Consulte o valor.</p><span class="tag">Encomenda</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como pedir</h2>
+    <p class="sub">É simples e direto.</p>
+    <div class="how">
+      <div><b>Escolha</b>Veja o cardápio e os destaques no Instagram.</div>
+      <div><b>Mande mensagem</b>Diga o que quer, a quantidade e a data.</div>
+      <div><b>Receba fresquinho</b>Combinamos a retirada ou a entrega na comunidade.</div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <h2>Quem faz</h2>
+    <p>A Eli e o Nil tocam a cozinha juntos, com receitas de família e muito cuidado em cada fornada. Cada salgado sai pensado para quem vai comer.</p>
+    <p class="script">Agradecemos pela preferência!</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Bateu a fome?</h2>
+    <p class="sub" style="margin-inline:auto">Chame a gente e faça seu pedido.</p>
+    <a class="btn y" id="wa2" href="https://instagram.com/elinilsalgados_" target="_blank" rel="noopener">Chamar no Instagram</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Eli e Nil Salgados · Comunidade de Paim<br>
+  <a href="https://instagram.com/elinilsalgados_" target="_blank" rel="noopener" style="color:inherit">@elinilsalgados_</a></div>
+</footer>
+
+<script>
+// Para pedidos por WhatsApp, coloque o número aqui (ex: "5571999999999").
+var WHATSAPP = "";
+if (WHATSAPP) {
+  var link = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Olá! Quero fazer uma encomenda.");
+  ["wa","wa2"].forEach(function(id){var a=document.getElementById(id);a.href=link;});
+  document.getElementById("wa2").textContent = "Chamar no WhatsApp";
+}
+</script>
+</body>
+</html>
